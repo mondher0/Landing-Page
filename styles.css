@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eee;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFA;
+    width: 100%;
+}
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+#nav-bar li {
+    list-style: none;
+    margin-left: 60px;
+}
+#nav-bar li a {
+    text-decoration: none;
+    color: #000;
+}
+#header-img {
+    width: 250px;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+#hero  h2 {
+    font-size: 22px;
+}
+
+#form #email {
+    display: block;
+    width: 270px;
+    padding: 5px;
+
+}
+
+#form #submit {
+    margin-top: 10px;
+    width: 120px;
+    background-color: #f1c40f;
+    border-style: none;
+    padding: 5px 10px 6px 5px;
+    font-weight: bold;
+
+}
+.container {
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+
+}
+.container .grid {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .grid .icon {
+    display: flex;
+    height: 125px;
+    color: darkorange;
+    align-items: center;
+    width: 20vh;
+}
+.container .grid .descr {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 125px;
+    justify-content: center;
+}
+.grid p, .grid h2 {
+    margin: 0 10px 0 10px;
+}
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-auto-flow: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px ;
+    grid-gap: 10px;
+
+}
+.pricing .con {
+    width: 300px;
+    height: 300px;
+    border: #000 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pricing .con .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+ol {
+    list-style: none;
+    margin: 15px 0;
+}
+.con ol li {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: -41px;
+}
+.con button {
+    background-color: #f1c40f;
+    border-style: none;
+    padding: 8px 20px;
+}
+footer {
+    margin: 30px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #ddd;
+    padding-right: 15px;
+    margin-bottom: 0;
+
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    
+}
+footer ul li {
+    margin-left: 10px;
+    font-size: 16px;
+    
+}
+span {
+    font-size: 14.4px;
+    color: #444444;
+    margin-bottom: 10px;
+    
+}
+@media (max-width: 950px) {
+    .pricing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        
+    
+    }
+   
+  }
+  @media (max-width: 900px) {
+    
+    #nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    #header-img {
+        width: 200px;
+    }
+
+  }
+  @media (max-width: 500px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 14px;
+        margin-right: 110px;
+  
+    }
+   
+    #header-img {
+        width: 200px;
+        margin-right: 53px;
+    }
+    #hero h2 {
+        margin-top: 70px;
+    }
+    .container .grid .icon {
+        display: none;
+
+    }
+    .container .grid .descr {
+        width: 100%;
+        text-align: center;
+    }
+   #footer {
+    background-color: transparent;
+   }
+  
+    
+
+
+  }
